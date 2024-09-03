@@ -1,0 +1,22 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer;
+    background-color: var(--green-color);
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+.scrollToTop span {
+    color: var(--brown-color);
+}
+
+@media (max-width: 576px) {
+    .scrollToTop {
+        bottom: 55px;
+        right: 8px;
+        z-index: 10;
+        padding: 1px 4px;
+    }
+}

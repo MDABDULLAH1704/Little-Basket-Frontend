@@ -1,0 +1,231 @@
+.basketItem-title {
+    margin: 120px 120px 4px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    color: var(--brown-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.basketItem-hr {
+    margin: auto;
+    width: 75%;
+}
+
+.basketItem-detail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 110px;
+    background-color: var(--light-red-color);
+    border-radius: 15px;
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+.basketItem-detail img {
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--img-border-1);
+}
+
+.basketItem-detail-name {
+    width: 120px;
+    color: var(--brown-color);
+}
+
+.basketItem-detail-price {
+    width: 95px;
+    color: var(--brown-color);
+}
+
+.basketItem-detail-quantity {
+    width: 90px;
+    color: var(--brown-color);
+}
+
+.basketItem-detail-total {
+    width: 95px;
+    color: var(--brown-color);
+}
+
+.basketItem-detail-remove {
+    color: var(--brown-color);
+    cursor: pointer;
+}
+
+.basketItem-detail-mobile {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 1100px) {
+    .basketItem-detail {
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    hr {
+        width: 78%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .basketItem-title {
+        gap: 100px;
+    }
+
+    .basketItem-detail {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    hr {
+        width: 81%;
+    }
+}
+
+@media (max-width: 924px) {
+    .basketItem-title {
+        gap: 85px;
+    }
+
+    .basketItem-detail {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    hr {
+        width: 80%;
+    }
+}
+
+@media (max-width: 824px) {
+    .basketItem-title {
+        gap: 70px;
+    }
+
+    .basketItem-detail {
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    hr {
+        width: 79%;
+    }
+}
+
+@media (max-width: 767px) {
+    .basketItem-title {
+        gap: 55px;
+    }
+
+    .basketItem-detail {
+        margin-left: 60px;
+        margin-right: 90px;
+    }
+
+    hr {
+        width: 83%;
+    }
+}
+
+@media (max-width: 667px) {
+    .basketItem-title {
+        gap: 40px;
+    }
+
+    .basketItem-detail {
+        margin-left: 75px;
+        margin-right: 100px;
+    }
+
+    hr {
+        width: 78%;
+    }
+}
+
+@media (max-width: 624px) {
+    .basketItem-title {
+        gap: 25px;
+    }
+
+    .basketItem-detail {
+        margin-left: 85px;
+        margin-right: 110px;
+    }
+
+    hr {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .basketItem-title {
+        display: none;
+    }
+
+    .basketItem-detail {
+        display: none;
+    }
+
+    .mobile {
+        margin-top: 65px;
+        margin-bottom: 70px;
+    }
+
+    .basketItem-detail-mobile {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 2px;
+        background-color: var(--light-green-color);
+        border-radius: 15px;
+    }
+
+    .basketItem-detail-mobile-right {
+        margin-top: 15px;
+        line-height: 23px;
+    }
+
+    .basketItem-detail-mobile img {
+        width: 120px;
+        margin-top: 20px;
+        border: 1px solid var(--img-border-2);
+        border-radius: 15px;
+    }
+
+    .basketItem-detail-mobile-name {
+        color: var(--brown-color);
+        font-size: 15px;
+    }
+
+    .basketItem-detail-mobile-price {
+        color: var(--light-brown-color);
+        font-size: 15px;
+    }
+
+    .basketItem-detail-mobile-quantity {
+        color: var(--light-brown-color);
+        font-size: 15px;
+    }
+
+    .basketItem-detail-mobile-total {
+        color: var(--light-brown-color);
+        font-size: 15px;
+    }
+
+    .basketItem-detail-mobile-remove {
+        color: var(--brown-color);
+        font-size: 15px;
+        width: 20px;
+        padding: 1px;
+    }
+}

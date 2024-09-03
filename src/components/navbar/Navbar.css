@@ -1,0 +1,133 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    background-color: var(--light-orange-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img {
+    height: 40px;
+    width: 80%;
+}
+
+.category {
+    background-color: var(--green-color);
+    padding: 0px 16px 6px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-link {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.category p {
+    font-size: 16px;
+}
+
+.user-link {
+    text-decoration: none;
+}
+
+.user span {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    margin: 1px;
+}
+
+.basket {
+    margin-top: -22px;
+}
+
+.basket span {
+    font-size: 20px;
+    color: var(--green-color);
+    background-color: var(--white-color);
+    border: 1px solid;
+    padding: 6px;
+    padding-bottom: 3px;
+    border-radius: 48%;
+}
+
+.basket p {
+    font-size: 12px;
+    margin-top: 3px;
+    color: var(--brown-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.basket div {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -48px;
+    margin-left: 26px;
+    border-radius: 11px;
+    font-size: 12px;
+    background: var(--red-color);
+    color: var(--white-color);
+    z-index: 100;
+    position: relative;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .category {
+        padding: 0px 10px 6px 12px;
+    }
+
+    .category p {
+        font-size: 15px;
+    }
+
+    .user span {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .basket p {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        background-color: var(--green-color);
+        text-align: center;
+        height: 50px;
+    }
+
+    .category {
+        display: none;
+    }
+
+    .user {
+        display: none;
+    }
+
+    .basket {
+        display: none;
+    }
+}

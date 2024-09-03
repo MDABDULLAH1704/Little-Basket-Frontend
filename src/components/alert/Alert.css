@@ -1,0 +1,26 @@
+.alert {
+    height: 32px;
+    width: auto;
+    padding: 0px 6px;
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 68px;
+    right: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .alert {
+        height: 23px;
+        width: auto;
+        font-size: 10px;
+        top: 51px;
+        right: 3px;
+    }
+}

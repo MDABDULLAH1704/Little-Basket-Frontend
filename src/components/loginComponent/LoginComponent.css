@@ -1,0 +1,134 @@
+.login-btn {
+    margin-top: 115px;
+    background-color: var(--medium-red-color);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30%;
+    margin-left: 22%;
+    margin-right: 22%;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-btn div {
+    border: 1px solid var(--medium-red-color);
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.login-btn div:hover {
+    color: var(--brown-color);
+}
+
+/* login CSS */
+.login {
+    line-height: 45px;
+    background-color: var(--light-orange-color);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 8% 45px 8%;
+}
+
+.login img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.login button {
+    padding: 4px 18px;
+    border-radius: 6px;
+    border: 1px solid var(--light-brown-color);
+    background-color: var(--light-green-color);
+    color: var(--brown-color);
+    margin-left: 36%;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: var(--medium-red-color);
+    color: var(--white-color);
+    border-color: var(--white-color);
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .login-btn {
+        column-gap: 18%;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+    .login-btn div {
+        padding: 5px 25px;
+    }
+
+    .login img {
+        width: 270px;
+    }
+
+    .login button {
+        margin-left: 33%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-btn {
+        margin-top: 100px;
+        height: 30px;
+        column-gap: 20%;
+        font-size: 16px;
+    }
+
+    .login-btn div {
+        padding: 5px 10px;
+        border-radius: 20px;
+    }
+
+    .login {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+        margin: 10px 5% 90px 5%;
+    }
+
+    .login img {
+        width: 300px;
+    }
+
+    .login button {
+        padding: 4px 14px;
+        margin-left: 33%;
+    }
+}
+
+/* Design for Input tag */
+.input input {
+    height: 30px;
+    width: 280px;
+    padding: 9px 0px 9px 10px;
+    font-size: 15px;
+    border: 1px solid var(--light-brown-color);
+    border-radius: 8px;
+    outline: none;
+    color: var(--light-brown-color);
+}
+
+.input input:hover {
+    border: 1.5px solid var(--green-color);
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .input input {
+        width: 220px;
+    }
+}

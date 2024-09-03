@@ -1,0 +1,48 @@
+@media (max-width: 576px) {
+    .navBottom {
+        position: fixed;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        border-top: 1px solid rgb(200, 200, 200);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 25px;
+        background-color: var(--white-color);
+        z-index: 5;
+    }
+
+    .navBottom-link {
+        text-decoration: none;
+    }
+
+    .navBottom-div {
+        line-height: 12px;
+        text-align: center;
+        color: var(--light-brown-color);
+    }
+
+    .navBottom-div img {
+        height: 25px;
+    }
+
+    .navBottom-div p {
+        font-size: 10px;
+    }
+
+    .navBottom-basket span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -16px;
+        margin-left: 25px;
+        border-radius: 6px;
+        font-size: 10px;
+        padding: 2px 3px 2px 3px;
+        background: var(--medium-red-color);
+        color: var(--white-color);
+        z-index: 100;
+        position: relative;
+    }
+}

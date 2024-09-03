@@ -1,0 +1,117 @@
+.item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+    padding: 20px;
+    border: 1px solid var(--img-border-1);
+    border-radius: 10px;
+}
+
+.item img {
+    width: 150px;
+    border: 1px solid var(--img-border-1);
+    border-radius: 10px;
+}
+
+.item img:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.item-name {
+    font-size: 16px;
+    color: var(--brown-color);
+    margin-top: 8px;
+}
+
+.item-mass {
+    font-size: 12px;
+    color: var(--light-brown-color);
+    margin-top: 8px;
+}
+
+.price {
+    margin-top: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.new-price {
+    font-size: 16px;
+    color: var(--brown-color);
+}
+
+.old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: var(--light-brown-color);
+}
+
+.btn-p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 50px;
+    border: 1px solid var(--red-color);
+    border-radius: 5px;
+    color: var(--red-color);
+    background-color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--red-color);
+    transition: 0.5s;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    .item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: var(--white-color);
+        padding: 10px;
+        border: 1px solid var(--img-border-2);
+    }
+
+    .item img {
+        width: 130px;
+        border: 1px solid var(--img-border-2);
+    }
+
+    .item-name {
+        font-size: 12px;
+    }
+
+    .item-mass {
+        font-size: 10px;
+    }
+
+    .new-price {
+        font-size: 15px;
+        color: var(--brown-color);
+    }
+
+    .old-price {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 6px 40px;
+        color: var(--white-color);
+        background-color: var(--medium-red-color);
+        border: 1px solid var(--medium-red-color);
+    }
+
+    .btn:hover {
+        background-color: var(--medium-red-color);
+        transition: 0.5s;
+    }
+
+}

@@ -1,0 +1,52 @@
+.basketTotal {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-green-color);
+    color: var(--brown-color);
+}
+
+.basketTotal-subTotal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basketTotal-shippingFree {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basketTotal-total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basketTotal-hr {
+    margin: 18px auto auto auto;
+    width: 50%;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.02);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {}

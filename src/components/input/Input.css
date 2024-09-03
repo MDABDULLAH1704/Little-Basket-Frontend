@@ -1,0 +1,21 @@
+.input input {
+    height: 30px;
+    width: 280px;
+    padding: 9px 0px 9px 10px;
+    font-size: 15px;
+    border: 1px solid var(--light-brown-color);
+    border-radius: 8px;
+    outline: none;
+    color: var(--light-brown-color);
+}
+
+.input input:hover {
+    border: 1.5px solid var(--green-color);
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .input input {
+        width: 220px;
+    }
+}

@@ -1,0 +1,24 @@
+body {
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  --green-color: #5E9400;
+  --light-green-color: #fbfff7;
+  --red-color: #CC0000;
+  --medium-red-color: #ff5050;
+  --light-red-color: rgb(255, 240, 240);
+  --brown-color: #202020;
+  --light-brown-color: #666666;
+  --white-color: #FFFFFF;
+  --light-orange-color: rgb(255, 231, 199);
+  --img-border-1: rgb(200, 200, 200);
+  --img-border-2: rgb(230, 230, 230);
+}
