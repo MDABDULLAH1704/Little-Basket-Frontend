@@ -6,14 +6,14 @@
 }
 
 .homeProduct-h2 span {
-    color: var(--light-brown-color);
+    color: var(  --green-color);
 }
 
 .homeProduct {
     margin-left: 140px;
     margin-right: 140px;
     margin-bottom: 60px;
-    background-color: var(--light-red-color);
+    background-color: rgb(250, 250, 250);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -56,6 +56,14 @@
 }
 
 @media (max-width: 576px) {
+    .homeProduct {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* 576 was the older pixel */
+@media (max-width: 480px) {
     .homeProduct-h2 {
         margin-top: 20px;
         margin-left: 22px;
@@ -64,6 +72,6 @@
     .homeProduct {
         margin-left: 22px;
         margin-right: 22px;
-        background-color: var(--light-green-color);
+        background-color: rgb(246, 246, 246);
     }
 }

@@ -16,7 +16,7 @@ const Alert = (props) => {
         <>
             {showAlert && (
                 <div className='alert'>
-                    <p>{props.alert}</p>
+                    <p><b>{props.alert}</b></p>
                 </div>
             )}
         </>

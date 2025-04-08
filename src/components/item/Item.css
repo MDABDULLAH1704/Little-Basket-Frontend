@@ -5,16 +5,17 @@
     padding: 20px;
     border: 1px solid var(--img-border-1);
     border-radius: 10px;
+    width: 30%;
 }
 
 .item img {
-    width: 150px;
+    width: 100%;
     border: 1px solid var(--img-border-1);
     border-radius: 10px;
 }
 
 .item img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
@@ -71,17 +72,24 @@
 }
 
 /* Responsive design */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    .item {
+        width: 45%;
+    }
+}
+
+/* 576 was the older pixel */
+@media (max-width: 480px) {
     .item {
         margin-top: 10px;
         margin-bottom: 10px;
         background-color: var(--white-color);
         padding: 10px;
         border: 1px solid var(--img-border-2);
+        width: 40%;
     }
 
     .item img {
-        width: 130px;
         border: 1px solid var(--img-border-2);
     }
 
@@ -113,5 +121,4 @@
         background-color: var(--medium-red-color);
         transition: 0.5s;
     }
-
 }

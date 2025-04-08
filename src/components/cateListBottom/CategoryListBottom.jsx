@@ -1,7 +1,6 @@
 import React from 'react'
 import './CategoryListBottom.css'
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom';
 import { useMenu } from '../../context/MenuContext';
 
 

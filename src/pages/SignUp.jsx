@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import Navbar from '../components/navbar/Navbar'
 import NavBottom from '../components/navBottom/NavBottom'
 import SignUpComponent from '../components/signUpComponent/SignUpComponent'
-import Footer from '../components/footer/Footer'
 
 const SignUp = () => {
     // Function for Title
@@ -18,7 +17,6 @@ const SignUp = () => {
             <Navbar />
             <NavBottom />
             <SignUpComponent />
-            <Footer />
         </div>
     )
 }

@@ -43,20 +43,23 @@
     border-radius: 10px;
 }
 
+.signUp div form .input input {
+    background-color: var(--white-color);
+}
+
 .signUp button {
     padding: 4px 8px;
     border-radius: 6px;
     border: 1px solid var(--light-brown-color);
-    background-color: var(--light-green-color);
+    background: linear-gradient(to right, rgb(255, 125, 125), white, rgb(125, 255, 125));
     color: var(--brown-color);
     margin-left: 30%;
     cursor: pointer;
 }
 
 .signUp button:hover {
-    background-color: var(--medium-red-color);
-    color: var(--white-color);
-    border-color: var(--white-color);
+    border-radius: 2px;
+    scale: 1.01;
 }
 
 .signUp div p {

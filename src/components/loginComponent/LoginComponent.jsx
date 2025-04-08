@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import { handleError, handleSuccess } from '../../utils'
 
 const LoginComponent = () => {
+    const [loading, setLoading] = useState(false); // loading state
     const navigate = useNavigate();
 
     const [loginInfo, setLoginInfo] = useState({
@@ -27,9 +28,12 @@ const LoginComponent = () => {
     // handleLogin function
     const handleLogin = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const { email, password } = loginInfo;
         if (!email || !password) {
-            return handleError('email and password are required')
+            handleError('Email and password are required');
+            setLoading(false); // Set loading to false if validation fails
+            return;
         }
         try {
             const url = `${baseURL}/auth/login`;
@@ -48,7 +52,7 @@ const LoginComponent = () => {
                 localStorage.setItem('loggedInUser', name);
                 setTimeout(() => {
                     navigate('/')
-                }, 2500)
+                }, 2000)
             } else if (error) {
                 const details = error?.details[0].message;
                 handleError(details);
@@ -58,6 +62,8 @@ const LoginComponent = () => {
             console.log(result);
         } catch (err) {
             handleError(err);
+        } finally {
+            setLoading(false);
         }
     }
 
@@ -79,7 +85,8 @@ const LoginComponent = () => {
                                 onChange={handleChange}
                                 type='email'
                                 name='email'
-                                placeholder='Enter email' />
+                                placeholder='Enter email'
+                                disabled={loading} />
                         </div>
                         <div className='input'>
                             <input
@@ -87,10 +94,11 @@ const LoginComponent = () => {
                                 onChange={handleChange}
                                 type='password'
                                 name='password'
-                                placeholder='Enter password' />
+                                placeholder='Enter password'
+                                disabled={loading} />
                         </div>
 
-                        <button type='submit'>Login</button>
+                        <button type='submit'>{loading ? 'Logging in...' : 'Login'}</button>
                     </form>
                 </div>
             </div>

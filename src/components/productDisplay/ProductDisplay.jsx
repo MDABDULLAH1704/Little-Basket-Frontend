@@ -2,11 +2,15 @@ import React, { useContext, useState } from 'react'
 import './ProductDisplay.css'
 import { HomeContext } from '../../context/HomeContext'
 import Alert from '../alert/Alert'
+import { useNavigate } from 'react-router-dom'
+import { FaArrowLeft } from 'react-icons/fa';
+
 
 const ProductDisplay = (props) => {
     const { product } = props;
     const { addToCart } = useContext(HomeContext);
     const [showAlert, setShowAlert] = useState(false);
+    const navigate = useNavigate();
 
     const handleAddToCart = () => {
         addToCart(product.id);
@@ -14,6 +18,10 @@ const ProductDisplay = (props) => {
         setTimeout(() => {
             setShowAlert(false);
         }, 1000);
+    }
+
+    const handleBackClick = () => {
+        navigate(-1); // Navigate back to the previous page
     }
 
     return (
@@ -36,6 +44,10 @@ const ProductDisplay = (props) => {
             <div className='productDisplay-detail'>
                 <h3>About The Product</h3>
                 <p>{product.detail}</p>
+            </div>
+
+            <div className="moveToPreviousPage">
+                <span onClick={handleBackClick}> <FaArrowLeft /> Back</span>
             </div>
 
             {showAlert === true && <Alert alert='Added to Basket' />}

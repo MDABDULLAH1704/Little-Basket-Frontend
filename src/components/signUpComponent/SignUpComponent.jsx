@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import { handleError, handleSuccess } from '../../utils'
 
 const SignUpComponent = () => {
+    const [loading, setLoading] = useState(false); // loading state
     const navigate = useNavigate();
 
     const [signUpInfo, setSignUpInfo] = useState({
@@ -28,9 +29,12 @@ const SignUpComponent = () => {
     // handleSignUp function
     const handleSignUp = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const { name, email, password } = signUpInfo;
         if (!name || !email || !password) {
-            return handleError('name, email and password are required')
+            handleError('Name, email and password are required');
+            setLoading(false);
+            return;
         }
         try {
             const url = `${baseURL}/auth/signup`;
@@ -47,7 +51,7 @@ const SignUpComponent = () => {
                 handleSuccess(message);
                 setTimeout(() => {
                     navigate('/login')
-                }, 2500)
+                }, 2000)
             } else if (error) {
                 const details = error?.details[0].message;
                 handleError(details);
@@ -57,6 +61,8 @@ const SignUpComponent = () => {
             console.log(result);
         } catch (err) {
             handleError(err);
+        } finally {
+            setLoading(false);
         }
     }
 
@@ -78,7 +84,8 @@ const SignUpComponent = () => {
                                 onChange={handleChange}
                                 type='text'
                                 name='name'
-                                placeholder='Enter name' />
+                                placeholder='Enter name'
+                                disabled={loading} />
                         </div>
                         <div className='input'>
                             <input
@@ -86,7 +93,8 @@ const SignUpComponent = () => {
                                 onChange={handleChange}
                                 type='email'
                                 name='email'
-                                placeholder='Enter email' />
+                                placeholder='Enter email'
+                                disabled={loading} />
                         </div>
                         <div className='input'>
                             <input
@@ -94,10 +102,11 @@ const SignUpComponent = () => {
                                 onChange={handleChange}
                                 type='password'
                                 name='password'
-                                placeholder='Enter password' />
+                                placeholder='Enter password'
+                                disabled={loading} />
                         </div>
 
-                        <button type='submit'>Create Account</button>
+                        <button type='submit'>{loading ? 'Creating Account...' : 'Create Account'}</button>
 
                         <div>
                             <p>Already Have An Account</p>
