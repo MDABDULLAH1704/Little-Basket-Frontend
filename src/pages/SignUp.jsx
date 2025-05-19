@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import Navbar from '../components/navbar/Navbar'
-import NavBottom from '../components/navBottom/NavBottom'
 import SignUpComponent from '../components/signUpComponent/SignUpComponent'
 
 const SignUp = () => {
@@ -15,7 +14,6 @@ const SignUp = () => {
     return (
         <div>
             <Navbar />
-            <NavBottom />
             <SignUpComponent />
         </div>
     )

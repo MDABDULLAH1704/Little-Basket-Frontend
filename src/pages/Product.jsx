@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/navbar/Navbar'
-import NavBottom from '../components/navBottom/NavBottom'
 import { HomeContext } from '../context/HomeContext'
 import { useParams } from 'react-router-dom'
 import ProductDisplay from '../components/productDisplay/ProductDisplay'
@@ -22,7 +21,6 @@ const Product = () => {
     return (
         <div>
             <Navbar />
-            <NavBottom />
             <ProductDisplay product={product} />
             <Footer />
         </div>

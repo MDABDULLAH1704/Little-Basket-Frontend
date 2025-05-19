@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/navbar/Navbar'
-import NavBottom from '../components/navBottom/NavBottom'
 import HomeCarousel from '../components/homeCarousel/HomeCarousel'
 import HomeProduct from '../components/homeProduct/HomeProduct'
 import ScrollToTop from '../components/scrollToTop/ScrollToTop'
@@ -18,7 +17,6 @@ const Home = () => {
     return (
         <div>
             <Navbar />
-            <NavBottom />
             <HomeCarousel />
             <HomeProduct />
             <ScrollToTop />
