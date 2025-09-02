@@ -1,50 +1,75 @@
-import veg1 from './veg1.png'
-import veg2 from './veg2.webp'
-import veg3 from './veg3.png'
-import veg4 from './veg4.webp'
-import veg5 from './veg5.png'
-import veg6 from './veg6.png'
-import veg7 from './veg7.webp'
-import veg8 from './veg8.webp'
-import veg9 from './veg9.webp'
-import veg10 from './veg10.webp'
-import veg11 from './veg11.webp'
-import veg12 from './veg12.webp'
-import veg13 from './veg13.webp'
-import veg14 from './veg14.webp'
-import veg15 from './veg15.webp'
-import veg16 from './veg16.webp'
-import fruit1 from './fruit1.png'
-import fruit2 from './fruit2.png'
-import fruit3 from './fruit3.png'
-import fruit4 from './fruit4.png'
-import fruit5 from './fruit5.webp'
-import fruit6 from './fruit6.webp'
-import fruit7 from './fruit7.webp'
-import fruit8 from './fruit8.webp'
-import fruit9 from './fruit9.webp'
-import fruit10 from './fruit10.webp'
-import fruit11 from './fruit11.webp'
-import fruit12 from './fruit12.webp'
-import nonVeg1 from './nonVeg1.webp'
-import nonVeg2 from './nonVeg2.webp'
-import nonVeg3 from './nonVeg3.webp'
-import nonVeg4 from './nonVeg4.webp'
-import nonVeg5 from './nonVeg5.webp'
-import nonVeg6 from './nonVeg6.webp'
-import nonVeg7 from './nonVeg7.webp'
-import nonVeg8 from './nonVeg8.webp'
-import nonVeg9 from './nonVeg9.webp'
-import nonVeg10 from './nonVeg10.webp'
-import nonVeg11 from './nonVeg11.webp'
-import nonVeg12 from './nonVeg12.webp'
+import Produce1 from './Produce1.webp';
+import Produce2 from './Produce2.webp';
+import Produce3 from './Produce3.webp';
+import Produce4 from './Produce4.webp';
+import Produce5 from './Produce5.webp';
+import Produce6 from './Produce6.webp';
+import Produce7 from './Produce7.webp';
+import Produce8 from './Produce8.png';
+import Produce9 from './Produce9.webp';
+import Produce10 from './Produce10.webp';
+import Produce11 from './Produce11.webp';
+import Produce12 from './Produce12.png';
+import Produce13 from './Produce13.png';
+import Produce14 from './Produce14.webp';
+import Produce15 from './Produce15.png';
+import Produce16 from './Produce16.webp';
+import Produce17 from './Produce17.png';
+import Produce18 from './Produce18.png';
+import Produce19 from './Produce19.png';
+import Produce20 from './Produce20.webp';
+import Produce21 from './Produce21.webp';
+import Produce22 from './Produce22.webp';
+import Produce23 from './Produce23.webp';
+import Produce24 from './Produce24.webp';
+import Produce25 from './Produce25.webp';
+import Produce26 from './Produce26.webp';
+import Produce27 from './Produce27.webp';
+import Produce28 from './Produce28.png';
+import Grain29 from './grain1.webp';
+import Grain30 from './grain2.webp';
+import Grain31 from './grain3.webp';
+import Grain32 from './grain4.webp';
+import Grain33 from './grain5.webp';
+import Grain34 from './grain6.webp';
+import Grain35 from './grain7.webp';
+import Grain36 from './grain8.webp';
+import Beverage37 from './beverage1.webp';
+import Beverage38 from './beverage2.webp';
+import Beverage39 from './beverage3.webp';
+import Beverage40 from './beverage4.webp';
+import Beverage41 from './beverage5.webp';
+import Beverage42 from './beverage6.webp';
+import Beverage43 from './beverage7.webp';
+import Beverage44 from './beverage8.webp';
+import Snacks45 from './Snacks1.webp';
+import Snacks46 from './Snacks2.webp';
+import Snacks47 from './Snacks3.webp';
+import Snacks48 from './Snacks4.webp';
+import Hygiene49 from './Hygiene1.webp';
+import Hygiene50 from './Hygiene2.webp';
+import Hygiene51 from './Hygiene3.webp';
+import Hygiene52 from './Hygiene4.webp';
+import Household53 from './Household1.webp';
+import Household54 from './Household2.webp';
+import Household55 from './Household3.webp';
+import Household56 from './Household4.webp';
+import Dairy57 from './Dairy1.webp';
+import Dairy58 from './Dairy2.webp';
+import Dairy59 from './Dairy3.webp';
+import Dairy60 from './Dairy4.webp';
+import Meat61 from './meat1.webp';
+import Meat62 from './meat2.webp';
+import Meat63 from './meat3.webp';
+import Meat64 from './meat4.webp';
 
 
 let all_product = [
     {
         id: 1,
-        image: veg1,
-        name: 'Gourd (Parwal)',
+        category: 'Produce',
+        image: Produce1,
+        name: 'Potato',
         mass: '1kg',
         newPrice: '30',
         oldPrice: '40',
@@ -52,7 +77,8 @@ let all_product = [
     },
     {
         id: 2,
-        image: veg2,
+        category: 'Produce',
+        image: Produce2,
         name: 'Brinjal (Baigan)',
         mass: '1kg',
         newPrice: '40',
@@ -61,7 +87,8 @@ let all_product = [
     },
     {
         id: 3,
-        image: veg3,
+        category: 'Produce',
+        image: Produce3,
         name: 'Spinach (Palak)',
         mass: '1kg',
         newPrice: '20',
@@ -70,7 +97,8 @@ let all_product = [
     },
     {
         id: 4,
-        image: veg4,
+        category: 'Produce',
+        image: Produce4,
         name: 'Ladyfinger',
         mass: '1kg',
         newPrice: '30',
@@ -79,7 +107,8 @@ let all_product = [
     },
     {
         id: 5,
-        image: veg5,
+        category: 'Produce',
+        image: Produce5,
         name: 'Beans',
         mass: '1kg',
         newPrice: '40',
@@ -88,7 +117,8 @@ let all_product = [
     },
     {
         id: 6,
-        image: veg6,
+        category: 'Produce',
+        image: Produce6,
         name: 'Tomato',
         mass: '1kg',
         newPrice: '30',
@@ -97,7 +127,8 @@ let all_product = [
     },
     {
         id: 7,
-        image: veg7,
+        category: 'Produce',
+        image: Produce7,
         name: 'Potato',
         mass: '1kg',
         newPrice: '40',
@@ -106,7 +137,8 @@ let all_product = [
     },
     {
         id: 8,
-        image: veg8,
+        category: 'Produce',
+        image: Produce8,
         name: 'Onion',
         mass: '1kg',
         newPrice: '40',
@@ -115,7 +147,8 @@ let all_product = [
     },
     {
         id: 9,
-        image: veg9,
+        category: 'Produce',
+        image: Produce9,
         name: 'Broccoli',
         mass: '1kg',
         newPrice: '50',
@@ -124,7 +157,8 @@ let all_product = [
     },
     {
         id: 10,
-        image: veg10,
+        category: 'Produce',
+        image: Produce10,
         name: 'Cauliflower',
         mass: '1kg',
         newPrice: '30',
@@ -133,7 +167,8 @@ let all_product = [
     },
     {
         id: 11,
-        image: veg11,
+        category: 'Produce',
+        image: Produce11,
         name: 'Bell Pepper',
         mass: '1kg',
         newPrice: '40',
@@ -142,7 +177,8 @@ let all_product = [
     },
     {
         id: 12,
-        image: veg12,
+        category: 'Produce',
+        image: Produce12,
         name: 'Chilli',
         mass: '1kg',
         newPrice: '30',
@@ -151,7 +187,8 @@ let all_product = [
     },
     {
         id: 13,
-        image: veg13,
+        category: 'Produce',
+        image: Produce13,
         name: 'Cabbage',
         mass: '1kg',
         newPrice: '25',
@@ -160,7 +197,8 @@ let all_product = [
     },
     {
         id: 14,
-        image: veg14,
+        category: 'Produce',
+        image: Produce14,
         name: 'Bottle Gourd',
         mass: '1kg',
         newPrice: '30',
@@ -169,7 +207,8 @@ let all_product = [
     },
     {
         id: 15,
-        image: veg15,
+        category: 'Produce',
+        image: Produce15,
         name: 'Beetroot',
         mass: '1kg',
         newPrice: '25',
@@ -178,7 +217,8 @@ let all_product = [
     },
     {
         id: 16,
-        image: veg16,
+        category: 'Produce',
+        image: Produce16,
         name: 'Carrot',
         mass: '1kg',
         newPrice: '30',
@@ -187,7 +227,8 @@ let all_product = [
     },
     {
         id: 17,
-        image: fruit1,
+        category: 'Produce',
+        image: Produce17,
         name: 'Mango',
         mass: '1kg',
         newPrice: '65',
@@ -196,7 +237,8 @@ let all_product = [
     },
     {
         id: 18,
-        image: fruit2,
+        category: 'Produce',
+        image: Produce18,
         name: 'Black Plum',
         mass: '1kg',
         newPrice: '50',
@@ -205,7 +247,8 @@ let all_product = [
     },
     {
         id: 19,
-        image: fruit3,
+        category: 'Produce',
+        image: Produce19,
         name: 'Litchi',
         mass: '1kg',
         newPrice: '75',
@@ -214,7 +257,8 @@ let all_product = [
     },
     {
         id: 20,
-        image: fruit4,
+        category: 'Produce',
+        image: Produce20,
         name: 'Guava',
         mass: '1kg',
         newPrice: '40',
@@ -223,7 +267,8 @@ let all_product = [
     },
     {
         id: 21,
-        image: fruit5,
+        category: 'Produce',
+        image: Produce21,
         name: 'Banana',
         mass: '1kg',
         newPrice: '60',
@@ -232,7 +277,8 @@ let all_product = [
     },
     {
         id: 22,
-        image: fruit6,
+        category: 'Produce',
+        image: Produce22,
         name: 'Grapes',
         mass: '1kg',
         newPrice: '75',
@@ -241,7 +287,8 @@ let all_product = [
     },
     {
         id: 23,
-        image: fruit7,
+        category: 'Produce',
+        image: Produce23,
         name: 'Watermelon',
         mass: '1kg',
         newPrice: '20',
@@ -250,7 +297,8 @@ let all_product = [
     },
     {
         id: 24,
-        image: fruit8,
+        category: 'Produce',
+        image: Produce24,
         name: 'Papaya',
         mass: '1kg',
         newPrice: '50',
@@ -259,7 +307,8 @@ let all_product = [
     },
     {
         id: 25,
-        image: fruit9,
+        category: 'Produce',
+        image: Produce25,
         name: 'Orange',
         mass: '1kg',
         newPrice: '80',
@@ -268,7 +317,8 @@ let all_product = [
     },
     {
         id: 26,
-        image: fruit10,
+        category: 'Produce',
+        image: Produce26,
         name: 'Kiwi',
         mass: '1kg',
         newPrice: '120',
@@ -277,7 +327,8 @@ let all_product = [
     },
     {
         id: 27,
-        image: fruit11,
+        category: 'Produce',
+        image: Produce27,
         name: 'Cucumber',
         mass: '1kg',
         newPrice: '30',
@@ -286,7 +337,8 @@ let all_product = [
     },
     {
         id: 28,
-        image: fruit12,
+        category: 'Produce',
+        image: Produce28,
         name: 'Apple',
         mass: '1kg',
         newPrice: '100',
@@ -295,111 +347,363 @@ let all_product = [
     },
     {
         id: 29,
-        image: nonVeg1,
-        name: 'Chicken',
+        category: 'Grain',
+        image: Grain29,
+        name: 'Rice',
         mass: '1kg',
-        newPrice: '240',
-        oldPrice: '260',
-        detail: 'Chicken offers numerous health benefits, making it a versatile and valuable addition to any diet. It is a lean source of high-quality protein, essential for muscle growth, repair, and overall body function. Chicken is also rich in important vitamins and minerals, such as B vitamins (especially niacin and B6), which support energy metabolism and brain function, and minerals like phosphorus and selenium that are crucial for bone health and immune system support. Additionally, its lower fat content, particularly when opting for skinless cuts, makes it a heart-healthy choice compared to red meats. The versatility of chicken means it can be incorporated into a wide variety of dishes, promoting balanced nutrition and making it easy to maintain a diverse diet.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 30,
-        image: nonVeg2,
-        name: 'Chicken Breast Boneless',
+        category: 'Grain',
+        image: Grain30,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '400',
-        oldPrice: '450',
-        detail: 'Chicken breast boneless offers a multitude of benefits, making it a popular choice for health-conscious individuals. It’s a lean source of protein, essential for muscle repair and growth, without the higher fat content found in other cuts of meat. This makes it ideal for those looking to maintain or build muscle while managing calorie intake. Chicken breast is also rich in important vitamins and minerals, including B vitamins (such as niacin and B6), which support energy metabolism and overall well-being. Its versatility in cooking allows for a wide range of healthy meal options, from grilling and baking to sautéing and slow-cooking. Additionally, chicken breast is relatively easy to prepare and quick to cook, fitting well into busy lifestyles. With its mild flavor and adaptability, it can be incorporated into various cuisines and dishes, making it a staple in balanced, nutritious diets.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 31,
-        image: nonVeg3,
-        name: 'Chicken Wings',
+        category: 'Grain',
+        image: Grain31,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '350',
-        oldPrice: '380',
-        detail: 'Chicken wings offer a delightful mix of flavor and nutrition, making them a popular choice for many. They are a good source of high-quality protein, essential for muscle growth and repair, and they also provide important vitamins and minerals such as B vitamins, which support energy metabolism, and zinc, which is crucial for immune function. Additionally, chicken wings contain collagen, which can support joint health and skin elasticity. When prepared with healthy cooking methods, such as baking or grilling, they can be a relatively low-calorie, nutrient-dense snack or meal. However, it is important to be mindful of the preparation and sauces, as deep-frying and high-calorie sauces can add excessive fats and sugars.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 32,
-        image: nonVeg4,
-        name: 'Chicken Legs',
+        category: 'Grain',
+        image: Grain32,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '550',
-        oldPrice: '600',
-        detail: 'Chicken legs offer numerous benefits that make them a popular choice in many diets. Rich in high-quality protein, they support muscle growth and repair, making them an excellent option for those looking to build or maintain muscle mass. Chicken legs are also a good source of essential nutrients, including B vitamins like niacin and riboflavin, which play key roles in energy metabolism and overall health. The presence of minerals such as iron and zinc further contributes to optimal immune function and red blood cell production. Additionally, chicken legs provide a decent amount of healthy fats, which are important for brain function and hormone production. Versatile and relatively affordable, they can be cooked in various ways to suit different culinary preferences, making them both a nutritious and convenient food choice.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 33,
-        image: nonVeg5,
-        name: 'Mutton - Curry Cut',
+        category: 'Grain',
+        image: Grain33,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '800',
-        oldPrice: '850',
-        detail: 'Mutton curry cut offers a range of benefits that contribute to a balanced and nutritious diet. Rich in high-quality protein, it supports muscle growth and repair while also providing essential amino acids necessary for various bodily functions. This cut of meat is an excellent source of important nutrients like iron, which aids in oxygen transport and prevents anemia, and zinc, which is crucial for immune function and cellular repair. Mutton is also a good source of B vitamins, particularly B12, which supports nerve function and the formation of red blood cells. Additionally, mutton contains healthy fats that are important for brain health and energy. When prepared as a curry, the meat is often cooked with a variety of spices that not only enhance flavor but also provide additional health benefits, such as anti-inflammatory and antioxidant properties. Overall, mutton curry cut offers both nutritional value and culinary versatility, making it a beneficial choice for those seeking a hearty and wholesome meal.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 34,
-        image: nonVeg6,
-        name: 'Mutton - Liver',
+        category: 'Grain',
+        image: Grain34,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '600',
-        oldPrice: '650',
-        detail: 'Mutton liver offers a range of impressive health benefits due to its rich nutritional profile. It is an excellent source of high-quality protein, essential for muscle growth and repair, and provides vital vitamins and minerals. Particularly high in vitamin A, it supports vision, immune function, and skin health. The liver is also packed with B vitamins, including B12, which is crucial for red blood cell formation and neurological function. Additionally, it contains iron, which helps combat anemia and supports energy levels, and zinc, which plays a role in immune function and wound healing. Its high content of essential fatty acids contributes to heart health and cognitive function. However, because mutton liver is also high in cholesterol and purines, it should be consumed in moderation to balance its benefits with potential health concerns.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 35,
-        image: nonVeg7,
-        name: 'Mutton Lamb Shanks',
+        category: 'Grain',
+        image: Grain35,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '850',
-        oldPrice: '900',
-        detail: 'Mutton lamb shanks offer a range of nutritional and culinary benefits that make them a valuable addition to a diet. Rich in high-quality protein, they support muscle growth and repair while providing essential vitamins and minerals such as iron, zinc, and B vitamins, which are crucial for energy production and overall health. The slow-cooking process, often used for lamb shanks, breaks down connective tissues and collagen, resulting in tender, flavorful meat that is easier to digest. This method also enhances the development of rich, savory flavors and can make for a comforting, satisfying meal. Additionally, lamb shanks are versatile, adapting well to various cuisines and cooking styles, from hearty stews to flavorful braises, making them a favorite in diverse culinary traditions.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 36,
-        image: nonVeg8,
-        name: 'Mutton - Boneless',
+        category: 'Grain',
+        image: Grain36,
+        name: 'Grain',
         mass: '1kg',
-        newPrice: '1000',
-        oldPrice: '1050',
-        detail: 'Boneless mutton offers a range of nutritional and culinary benefits, making it a versatile and healthful choice for many dishes. High in protein, it supports muscle growth and repair while providing essential amino acids. It is also a rich source of important vitamins and minerals, including vitamin B12, iron, and zinc, which are crucial for energy production, red blood cell formation, and immune function. The absence of bones in boneless mutton simplifies preparation and cooking, allowing for quicker meal assembly and easier portion control. Additionally, its tender texture enhances the overall dining experience, making it suitable for a variety of recipes from stews and curries to kebabs and stir-fries. Overall, boneless mutton combines nutritional value with convenience and culinary flexibility.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
     },
     {
         id: 37,
-        image: nonVeg9,
-        name: 'Roopchand Fish',
+        category: 'Beverage',
+        image: Beverage37,
+        name: 'Beverage',
         mass: '1kg',
-        newPrice: '400',
-        oldPrice: '450',
-        detail: 'Roopchand fish, known for its delicate flavor and high nutritional value, offers a range of health benefits. It is an excellent source of lean protein, which supports muscle growth and repair, while its omega-3 fatty acids contribute to heart health by reducing inflammation and lowering cholesterol levels. Additionally, Roopchand fish is rich in essential vitamins and minerals, such as vitamin D and calcium, which promote bone health and enhance immune function. Its low mercury content makes it a safer choice compared to other fish species, and its easy digestibility makes it suitable for people with sensitive digestive systems. Including Roopchand fish in your diet can contribute to overall well-being, making it a valuable addition to a balanced nutrition plan.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
     },
     {
         id: 38,
-        image: nonVeg10,
-        name: 'Rohu Fish Curry',
+        category: 'Beverage',
+        image: Beverage38,
+        name: 'Beverage',
         mass: '1kg',
-        newPrice: '300',
-        oldPrice: '350',
-        detail: 'Rohu Fish Curry offers a variety of benefits that make it a nutritious and flavorful addition to any diet. This dish features Rohu, a freshwater fish rich in high-quality proteins, which are essential for muscle growth and repair. The fish also provides an abundance of omega-3 fatty acids, known for their heart-healthy benefits, including lowering cholesterol and reducing inflammation. Additionally, Rohu is a good source of essential vitamins and minerals such as vitamin D, B12, and selenium, which support overall health, boost immunity, and promote healthy skin and bones. The curry itself often includes spices like turmeric, ginger, and garlic, which have anti-inflammatory and antioxidant properties, enhancing the dish is health benefits. Overall, Rohu Fish Curry not only delivers a delightful taste but also supports a balanced, nutritious diet.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
     },
     {
         id: 39,
-        image: nonVeg11,
-        name: 'Catla Fish Curry',
+        category: 'Beverage',
+        image: Beverage39,
+        name: 'Beverage',
         mass: '1kg',
-        newPrice: '550',
-        oldPrice: '600',
-        detail: 'Catla fish curry offers a range of benefits that make it both a nutritious and flavorful choice. Rich in high-quality protein, Catla fish supports muscle growth and repair while being relatively low in fat compared to other animal proteins. It is an excellent source of essential omega-3 fatty acids, which promote heart health, reduce inflammation, and support brain function. Additionally, Catla fish is packed with important vitamins and minerals such as vitamin D, vitamin B12, selenium, and iodine, all of which contribute to overall well-being. When prepared in curry form, the dish also incorporates a variety of spices and herbs, which have their own health benefits, including improved digestion, antioxidant properties, and enhanced flavor without excess calories or unhealthy fats. This combination of nutritional advantages and taste makes Catla fish curry a wholesome and satisfying meal option.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
     },
     {
         id: 40,
-        image: nonVeg12,
-        name: 'Sardine Fish',
+        category: 'Beverage',
+        image: Beverage40,
+        name: 'Beverage',
         mass: '1kg',
-        newPrice: '650',
-        oldPrice: '700',
-        detail: 'Sardine fish offer a wealth of health benefits due to their rich nutrient profile. They are an excellent source of high-quality protein, essential for muscle growth and repair, and are packed with omega-3 fatty acids, which support heart health by reducing inflammation and lowering cholesterol levels. Sardines are also loaded with vitamins such as B12, crucial for brain health and red blood cell formation, and vitamin D, which supports bone health and immune function. Additionally, they provide a substantial amount of calcium, especially beneficial for bone strength, and are low in mercury compared to larger fish, making them a safer choice for regular consumption. Their combination of nutrients can contribute to improved cognitive function, enhanced energy levels, and a reduced risk of chronic diseases.',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 41,
+        category: 'Beverage',
+        image: Beverage41,
+        name: 'Beverage',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 42,
+        category: 'Beverage',
+        image: Beverage42,
+        name: 'Beverage',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 43,
+        category: 'Beverage',
+        image: Beverage43,
+        name: 'Beverage',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 44,
+        category: 'Beverage',
+        image: Beverage44,
+        name: 'Beverage',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 45,
+        category: 'Snacks',
+        image: Snacks45,
+        name: 'Snacks',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 46,
+        category: 'Snacks',
+        image: Snacks46,
+        name: 'Snacks',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 47,
+        category: 'Snacks',
+        image: Snacks47,
+        name: 'Snacks',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 48,
+        category: 'Snacks',
+        image: Snacks48,
+        name: 'Snacks',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 49,
+        category: 'Hygiene',
+        image: Hygiene49,
+        name: 'Hygiene',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 50,
+        category: 'Hygiene',
+        image: Hygiene50,
+        name: 'Hygiene',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 51,
+        category: 'Hygiene',
+        image: Hygiene51,
+        name: 'Hygiene',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 52,
+        category: 'Hygiene',
+        image: Hygiene52,
+        name: 'Hygiene',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 53,
+        category: 'Household',
+        image: Household53,
+        name: 'Household',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 54,
+        category: 'Household',
+        image: Household54,
+        name: 'Household',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 55,
+        category: 'Household',
+        image: Household55,
+        name: 'Household',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 56,
+        category: 'Household',
+        image: Household56,
+        name: 'Household',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 57,
+        category: 'Dairy',
+        image: Dairy57,
+        name: 'Dairy',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 58,
+        category: 'Dairy',
+        image: Dairy58,
+        name: 'Dairy',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 59,
+        category: 'Dairy',
+        image: Dairy59,
+        name: 'Dairy',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 60,
+        category: 'Dairy',
+        image: Dairy60,
+        name: 'Dairy',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 61,
+        category: 'Meat',
+        image: Meat61,
+        name: 'Meat',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 62,
+        category: 'Meat',
+        image: Meat62,
+        name: 'Meat',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 63,
+        category: 'Meat',
+        image: Meat63,
+        name: 'Meat',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
+    },
+    {
+        id: 64,
+        category: 'Meat',
+        image: Meat64,
+        name: 'Meat',
+        mass: '1kg',
+        newPrice: '100',
+        oldPrice: '120',
+        detail: 'Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.',
     },
 ];
 

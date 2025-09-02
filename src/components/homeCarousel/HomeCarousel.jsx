@@ -2,9 +2,9 @@ import React from 'react'
 import './HomeCarousel.css'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
-import caro1 from '../assets/caro1.png'
-import caro2 from '../assets/caro2.png'
-import caro3 from '../assets/caro3.png'
+import carosel1 from '../assets/carosel1.png'
+import carosel2 from '../assets/carosel2.png'
+import carosel3 from '../assets/carosel3.png'
 
 // Custom arrow components (you can use icons instead of text)
 const arrowStyles = {
@@ -30,13 +30,13 @@ const divStyle = {
 
 const slideImages = [
     {
-        url: caro1,
+        url: carosel1,
     },
     {
-        url: caro2,
+        url: carosel2,
     },
     {
-        url: caro3,
+        url: carosel3,
     },
 ];
 
@@ -44,7 +44,8 @@ const HomeCarousel = () => {
     return (
         <div className='slide-container' >
             <Slide
-                duration={1500}
+                duration={2000}
+                transitionDuration={500}
                 prevArrow={
                     <div style={{ ...arrowStyles, marginRight: '10px' }}>
                         &#10094; {/* Left arrow symbol */}

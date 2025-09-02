@@ -50,7 +50,11 @@ const ProductDisplay = (props) => {
                 <span onClick={handleBackClick}> <FaArrowLeft /> Back</span>
             </div>
 
-            {showAlert === true && <Alert alert='Added to Basket' />}
+            {showAlert === true && (
+                <div className="productDisplay-alert">
+                    <Alert alert="Added to Basket" />
+                </div>
+            )}
         </>
     )
 }

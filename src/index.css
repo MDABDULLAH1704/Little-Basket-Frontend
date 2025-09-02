@@ -11,7 +11,8 @@ body {
 /* CSS Variables */
 :root {
   --green-color: #5E9400;
-  --light-green-color: #fbfff7;
+  --light-green-color: #fafff6;
+  --light-green-color2:#f1ffe5;
   --red-color: #CC0000;
   --medium-red-color: #ff5050;
   --light-red-color: rgb(255, 240, 240);

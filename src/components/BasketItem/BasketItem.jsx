@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './BasketItem.css'
 import { HomeContext } from '../../context/HomeContext'
-import all_product from '../assets/all_product'
+import all_product from '../assets/1_all_product'
 import { FaTrash } from 'react-icons/fa'
 
 const BasketItem = () => {

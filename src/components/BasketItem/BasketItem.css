@@ -20,7 +20,7 @@
     align-items: center;
     margin-left: 80px;
     margin-right: 110px;
-    background-color: var(--light-red-color);
+    background-color: var(--light-green-color2);
     border-radius: 15px;
     padding-top: 2px;
     padding-bottom: 8px;
@@ -164,7 +164,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .basketItem-title {
         display: none;
     }

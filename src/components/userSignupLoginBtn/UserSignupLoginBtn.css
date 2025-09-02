@@ -1,19 +1,17 @@
 @media (max-width: 576px) {
     .userBottom {
         position: fixed;
-        top: 66.5%;
-        left: 22%;
+        bottom: 8%;
+        left: 20%;
         margin-left: 26%;
-        z-index: 200;
         text-align: center;
-        background-color: var(--white-color);
+        background-color: var(--light-orange-color);
         height: 80px;
-        width: 120px;
         line-height: 32px;
         padding: 5px 4px 8px 4px;
-        margin-top: 62px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid rgb(185, 185, 185);
+        z-index: 1000;
     }
 
     .userBottom-link {
@@ -24,7 +22,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-color: var(--brown-color);
         color: var(--white-color);
-        border-radius: 8px;
+        border-radius: 2px;
         margin: 2px;
     }
 

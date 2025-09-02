@@ -1,12 +1,12 @@
 import React, { useState, createContext } from 'react';
-import all_product from '../components/assets/all_product';
+import All_Product from '../components/assets/1_all_product.js';
 
 // Create context object
 export const HomeContext = createContext();
 
 const getDefaultCart = () => {   // Cart Logic 
     let cart = {};
-    for (let index = 0; index < all_product.length + 1; index++) {
+    for (let index = 0; index < All_Product.length + 1; index++) {
         cart[index] = 0;
     }
     return cart;
@@ -46,14 +46,14 @@ export const HomeProvider = (props) => {
         let totalAmount = 0;
         for (const item in cartItems) {
             if (cartItems[item] > 0) {
-                let itemInfo = all_product.find((product) => product.id === Number(item));
+                let itemInfo = All_Product.find((product) => product.id === Number(item));
                 totalAmount += cartItems[item] * itemInfo.newPrice;
             }
         }
         return totalAmount;
     }
 
-    const contextValue = { all_product, addToCart, getTotalCartItems, cartItems, removeFromCart, getTotalCartAmount };
+    const contextValue = { All_Product, addToCart, getTotalCartItems, cartItems, removeFromCart, getTotalCartAmount };
 
     return (
         <HomeContext.Provider value={contextValue}>

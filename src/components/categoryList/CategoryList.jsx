@@ -1,35 +1,56 @@
 import React from 'react'
 import './CategoryList.css'
-import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { useMenu } from '../../context/MenuContext';
 
 
 const CategoryList = () => {
-    const { category, setCategory } = useMenu();
-    const { categoryList, setCategoryList } = useMenu();
-
-    // Define different offsets based on screen size
-    const laptopOffset = 0; // Change this value as per your requirement
-
-    // Function to get offset based on screen width
-    const getOffset = () => {
-        return window.innerWidth >= 576 && laptopOffset;
-    };
+    const { setCategory } = useMenu();
+    const { setCategoryList } = useMenu();
 
     return (
         <>
-            <div className='categoryList'>
-                <ScrollLink className='link' to='Vegetables' spy={true} smooth={true} offset={getOffset() - 140} duration={500}>
-                    <p onClick={() => { setCategory(!category) || setCategoryList(!categoryList) }}>Vegetables</p>
-                </ScrollLink>
-
-                <ScrollLink className='link' to='Fruits' spy={true} smooth={true} offset={getOffset() - 140} duration={500}>
-                    <p onClick={() => { setCategory(!category) || setCategoryList(!categoryList) }}>Fruits</p>
-                </ScrollLink>
-
-                <ScrollLink className='link' to='NonVegetable' spy={true} smooth={true} offset={getOffset() - 140} duration={500}>
-                    <p onClick={() => { setCategory(!category) || setCategoryList(!categoryList) }}>Non-Vegetable</p>
-                </ScrollLink>
+            <div className='categoryList category-wrapper'>
+                <Link className='link' to='/category/Produce'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Fresh Produce
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Grain'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Food Grains
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Beverage'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Beverages
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Snacks'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Snacks & Branded Food
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Hygiene'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Hygiene
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Household'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Cleaning & Household
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Dairy'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Dairy Products
+                    </p>
+                </Link>
+                <Link className='link' to='/category/Meat'>
+                    <p onClick={() => { setCategory(false); setCategoryList(false); }}>
+                        Meat
+                    </p>
+                </Link>
             </div>
         </>
     )

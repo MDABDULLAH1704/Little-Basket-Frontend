@@ -7,7 +7,7 @@ const Alert = (props) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowAlert(false);
-        }, 2000);
+        }, 2500);
 
         return () => clearTimeout(timer);  // Clean up the timer to avoid memory leaks
     }, []);

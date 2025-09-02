@@ -1,14 +1,14 @@
-import React, { useContext, useEffect } from 'react'
-import Navbar from '../components/navbar/Navbar'
-import { HomeContext } from '../context/HomeContext'
-import { useParams } from 'react-router-dom'
-import ProductDisplay from '../components/productDisplay/ProductDisplay'
-import Footer from '../components/footer/Footer'
+import React, { useContext, useEffect } from 'react';
+import Navbar from '../components/navbar/Navbar';
+import { HomeContext } from '../context/HomeContext';
+import { useParams } from 'react-router-dom';
+import ProductDisplay from '../components/productDisplay/ProductDisplay';
+import Footer from '../components/footer/Footer';
 
 const Product = () => {
-    const { all_product } = useContext(HomeContext);
-    const { productId } = useParams();
-    const product = all_product.find((e) => e.id === Number(productId));
+    const { All_Product } = useContext(HomeContext);
+    const { id } = useParams();
+    const product = All_Product.find((e) => e.id === Number(id));
 
     // Function for Title
     useEffect(() => {

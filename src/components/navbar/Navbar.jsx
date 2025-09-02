@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './Navbar.css';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo1 from '../assets/logo1.png';
 import logo2 from '../assets/logo2.png';
 import { FaPlus, FaMinus } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 import { FaBagShopping } from 'react-icons/fa6';
 import { BiCategory, BiUserCircle, BiBasket } from 'react-icons/bi';
 import { useMenu } from '../../context/MenuContext';
@@ -14,11 +15,27 @@ import { HomeContext } from '../../context/HomeContext';
 import UserSignupLoginBtn from '../userSignupLoginBtn/UserSignupLoginBtn';
 
 const Navbar = () => {
-    const { setMenu, category, setCategory, categoryList, setCategoryList, menu, userSignupLoginBtn, setUserSignupLoginBtn } = useMenu();
+    const { menu, setMenu, category, setCategory, categoryList, setCategoryList, userSignupLoginBtn, setUserSignupLoginBtn } = useMenu();
     const { getTotalCartItems } = useContext(HomeContext);
-    const location = useLocation();
+    const [isXs, setIsXs] = useState(false);
 
-    const isHome = location.pathname === '/';
+
+    // Below code is for NavBottom     
+    useEffect(() => {
+        const onResize = () => setIsXs(window.innerWidth < 480);
+        onResize();
+        window.addEventListener('resize', onResize);
+        return () => window.removeEventListener('resize', onResize);
+    }, []);
+
+    // Hide search on signup, login, basket routes when <480px 
+    const hideSearch =
+        window.innerWidth < 768 &&
+        (location.pathname === '/signup' ||
+            location.pathname === '/login' ||
+            location.pathname === '/basket'
+        );
+
 
     return (
         <>
@@ -30,10 +47,25 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className='category' onClick={() => { setCategory(!category); setCategoryList(!categoryList) }}>
-                    <Link to='' className='category-link'>
-                        Shop by <p><b>Category </b> {category ? <FaMinus /> : <FaPlus />}</p>
-                    </Link>
+                {!hideSearch && (
+                    <div className="search">
+                        <FaSearch className="search-icon" />
+                        <input type="text" placeholder="Search for Products..." />
+                    </div>
+                )}
+
+                <div
+                    className="category-wrapper"
+                    onMouseEnter={() => { setCategory(true); setCategoryList(true); }}
+                    onMouseLeave={() => { setCategory(false); setCategoryList(false); }}
+                >
+                    <div className='category'>
+                        <div className='category-link'>
+                            Shop by <p><b>Category </b> {category ? <FaMinus /> : <FaPlus />}</p>
+                        </div>
+                    </div>
+                    {/* dropdown stays open while hovering over it */}
+                    {categoryList && <CategoryList />}
                 </div>
 
                 <div className='user'>
@@ -95,9 +127,12 @@ const Navbar = () => {
             </div>
 
             {/* Conditional Rendering */}
-            {categoryList && isHome && <CategoryList />}
-            {categoryList && !isHome && <Alert alert='Category Will Only Show When You Are At Home Page' />}
-            {categoryList && isHome && <CategoryListBottom />}
+            {categoryList && !isXs && (
+                <CategoryList />
+            )}
+            {categoryList && isXs && (
+                <CategoryListBottom />
+            )}
             {userSignupLoginBtn && <UserSignupLoginBtn />}
         </>
     )
